@@ -1,7 +1,7 @@
 # PROYECTOFINAL
 Proyecto de eCommerce (SECURELOCK CALDERON) -Equipos de Protección Antirrobo
 
-Este repositorio contiene la implementación de un sistema de eCommerce para la venta de equipos de protección antirobo, como alarmas, cerraduras y sensores de movimiento. El proyecto incluye:
+Este repositorio contiene la implementación de un sistema de eCommerce para la venta de equipos de protección antirobo, como alarmas, cerraduras y sensores de movimiento; El proyecto incluye:
 
 - "Base de Datos de Productos": Un archivo `products.js` con 40 productos de la línea de negocio.
 - VISTAS DEL SISTEMA:
