@@ -1,0 +1,15 @@
+h1 {
+    font-weight: bold;
+    text-align: center;
+    border: 4px solid rgb(10, 10, 143);
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
