@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../../PROYECTOFINAL/css/carrito.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Carrito de Compras</h1>
+    </header>
+
+    <main id="contenedor-carrito">
+      <section id="carrito">
+        <h2>Productos Seleccionados</h2>
+        <table id="tabla-productos">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Imagen</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Categoría</th>
+              <th>Proveedor</th>
+              <th>Disponibilidad</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+
+        <div id="resumen-compra">
+          <p>Total de productos: <span id="total-productos">0</span></p>
+          <p>Total de compra: <span id="total-compra">0</span> COP</p>
+          <p>
+            Cargo por domicilio: <span id="cargo-domicilio">15,000</span> COP
+          </p>
+          <p>Total a pagar: <span id="total-pagar">0</span> COP</p>
+          <button id="seguir-comprando">Seguir Comprando</button>
+          <button id="cancelar-compra">Cancelar Compra</button>
+        </div>
+      </section>
+
+      <section id="formulario-tarjeta">
+        <h2>Información de Pago</h2>
+        <form id="pago-form">
+          <label for="numero-tarjeta">Número de Tarjeta:</label>
+          <input type="text" id="numero-tarjeta" maxlength="19" required />
+
+          <label for="fecha-expiracion">Fecha de Expiración (MM/AA):</label>
+          <input
+            type="text"
+            id="fecha-expiracion"
+            placeholder="MM/AA"
+            required
+          />
+
+          <label for="codigo-seguridad">Código de Seguridad:</label>
+          <input type="password" id="codigo-seguridad" maxlength="3" required />
+
+          <label for="nombre-titular">Nombre del Titular:</label>
+          <input type="text" id="nombre-titular" required />
+
+          <label for="pais-emision">País de Emisión:</label>
+          <select id="pais-emision">
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Perú">Perú</option>
+            <option value="México">México</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Bolivia">Bolivia</option>
+          </select>
+
+          <label for="tipo-tarjeta">Tipo de Tarjeta:</label>
+          <select id="tipo-tarjeta">
+            <option value="Mastercard">Mastercard</option>
+            <option value="Visa">Visa</option>
+            <option value="Prepagada">Prepagada</option>
+          </select>
+
+          <button type="button" id="limpiar-campos">Limpiar Campos</button>
+          <button type="submit" id="confirmar-compra">Confirmar Compra</button>
+        </form>
+      </section>
+
+      <div id="mensaje-compra" style="display: none"></div>
+    </main>
+    <footer>
+      <p>&copy; SECURELOCK CALDERON</p>
+    </footer>
+
+    <script src="../../PROYECTOFINAL/js/carrito.js"></script>
+  </body>
+</html>

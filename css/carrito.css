@@ -1,0 +1,153 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f0ff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  #contenedor-carrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+  }
+  
+  #carrito {
+    flex: 0 0 60%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #carrito h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  #tabla-productos th,
+  #tabla-productos td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  #tabla-productos th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  #tabla-productos td {
+    background-color: #f9f9f9;
+  }
+  
+  #tabla-productos img {
+    max-width: 50px;
+  }
+  
+  #resumen-compra {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  #resumen-compra p {
+    margin: 5px 0;
+  }
+  
+  #resumen-compra button {
+    background-color: #e68e0b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #resumen-compra button:hover {
+    background-color: #d17b0a;
+  }
+  
+  #formulario-tarjeta {
+    flex: 0 0 35%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #formulario-tarjeta h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #pago-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+  
+  #pago-form input,
+  #pago-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #pago-form input[type="submit"],
+  #pago-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #pago-form input[type="submit"]:hover,
+  #pago-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #mensaje-compra {
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+  }
+  footer {
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 0.05rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.5rem;
+    z-index: 10;
+  }
+  

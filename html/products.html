@@ -2,21 +2,55 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos de Protección</title>
     <link rel="stylesheet" href="../../PROYECTOFINAL/css/products.css" />
   </head>
   <body>
-    <h1>Equipos de Protección Antirrobo</h1>
+    <header>
+      <h1>Equipos de Protección Antirrobo</h1>
+      <nav>
+        <button id="btn-cancelar-compra">Cancelar Compra</button>
+        <button id="btn-completar-compra">Completar Compra</button>
+      </nav>
+    </header>
 
-    <button id="btn-todos">Todos</button>
-    <button id="btn-alarmas">Alarmas</button>
-    <button id="btn-cerraduras">Cerraduras</button>
-    <button id="btn-camaras">Cámaras</button>
-    <button id="btn-sensores">Sensores</button>
+    <main>
+      <section id="filtros">
+        <h2>Filtrar Productos</h2>
+        <form id="form-filtros">
+          <label for="selector-categoria">Categoría:</label>
+          <select id="selector-categoria">
+            <option value="todos">Todos</option>
+            <option value="Alarmas">Alarmas</option>
+            <option value="Cerraduras">Cerraduras</option>
+            <option value="Cámaras">Cámaras</option>
+            <option value="Sensores">Sensores</option>
+          </select>
 
-    <div id="lista-de-productos"></div>
+          <label for="rango-precio">Precio máximo:</label>
+          <input type="number" id="rango-precio" placeholder="Precio máximo" />
+
+          <div class="filter-buttons">
+            <button type="button" id="btn-filtrar">Filtrar</button>
+            <button type="button" id="btn-limpiar">Limpiar Filtros</button>
+          </div>
+        </form>
+      </section>
+      <section id="contenedor-principal">
+        <section id="lista-de-productos" aria-label="Lista de productos">
+        </section>
+
+        <aside id="detalle-producto" style="display: none">
+          <h2>Detalle del Producto</h2>
+          <div id="info-producto"></div>
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" min="1" value="1" />
+          <button id="btn-agregar-carrito">Agregar al Carrito</button>
+        </aside>
+      </section>
+    </main>
 
     <script type="module" src="../../PROYECTOFINAL/js/app.js"></script>
   </body>
 </html>
-

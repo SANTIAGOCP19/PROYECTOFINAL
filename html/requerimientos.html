@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requerimientos de Compra</title>
+    <link rel="stylesheet" href="../../PROYECTOFINAL/css/requerimientos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Requerimientos de Compra</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Formulario de Requerimientos</h2>
+        <form
+          id="form-requerimientos"
+          aria-label="Formulario de Requerimientos"
+        >
+          <label for="nombre">Nombre del comprador:</label>
+          <input type="text" id="nombre" maxlength="20" required />
+
+          <label for="presupuesto">Presupuesto máximo (COP):</label>
+          <input type="number" id="presupuesto" min="1" required />
+
+          <label for="cantidad">Cantidad máxima de artículos:</label>
+          <input type="number" id="cantidad" min="1" max="20" required />
+
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" required />
+
+          <fieldset>
+            <legend>Tipo de entrega:</legend>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="envio"
+                name="entrega"
+                value="envio"
+                required
+              />
+              <label for="envio">Envío</label>
+              <input
+                type="radio"
+                id="recoger"
+                name="entrega"
+                value="recoger"
+                required
+              />
+              <label for="recoger">Recoger</label>
+            </div>
+          </fieldset>
+
+          <div class="buttons">
+            <button type="button" id="iniciar-compra" class="btn">
+              Iniciar compra
+            </button>
+            <button type="reset" id="limpiar-campos" class="btn btn-secundario">
+              Limpiar campos
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; SECURELOCK CALDERON</p>
+    </footer>
+
+    <script type="module" src="../../PROYECTOFINAL/js/requerimientos.js"></script>
+  </body>
+</html>
